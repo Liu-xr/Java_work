@@ -1,0 +1,21 @@
+{
+  "kind": "DN",
+  "vexes": [
+    { "no":"00" , "name":"顶点00" },
+    { "no":"01" , "name":"顶点01" },
+    { "no":"02" , "name":"顶点02" },
+    { "no":"03" , "name":"顶点03" },
+    { "no":"04" , "name":"顶点04" },
+    { "no":"05" , "name":"顶点05" }
+  ],
+  "arcs": [
+    {"tail":0,"head":5,"weight":100},
+    {"tail":0,"head":4,"weight":30},
+    {"tail":0,"head":2,"weight":10},
+    {"tail":1,"head":2,"weight":5},
+    {"tail":2,"head":3,"weight":50},
+    {"tail":3,"head":5,"weight":10},
+    {"tail":4,"head":3,"weight":20},
+    {"tail":4,"head":5,"weight":60}
+  ]
+}

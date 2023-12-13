@@ -1,0 +1,28 @@
+{
+  "kind": "UDN",
+  "vexes": [
+    { "no":"00" , "name":"顶点00" },
+    { "no":"01" , "name":"顶点01" },
+    { "no":"02" , "name":"顶点02" },
+    { "no":"03" , "name":"顶点03" },
+    { "no":"04" , "name":"顶点04" },
+    { "no":"05" , "name":"顶点05" },
+    { "no":"06" , "name":"顶点06" },
+    { "no":"07" , "name":"顶点07" },
+    { "no":"08" , "name":"顶点08" }
+  ],
+  "arcs": [
+    {"tail":0,"head":1,"weight":6},
+    {"tail":0,"head":3,"weight":4},
+    {"tail":0,"head":7,"weight":3},
+    {"tail":1,"head":2,"weight":7},
+    {"tail":1,"head":3,"weight":2},
+    {"tail":1,"head":6,"weight":2},
+    {"tail":2,"head":3,"weight":6},
+    {"tail":2,"head":5,"weight":1},
+    {"tail":2,"head":8,"weight":3},
+    {"tail":3,"head":5,"weight":2},
+    {"tail":4,"head":6,"weight":4},
+    {"tail":6,"head":7,"weight":8}
+  ]
+}
