@@ -1,0 +1,11 @@
+div{
+	width:240px;
+	height: 210px;
+	margin-top: 250px;
+	margin-left: 630px;
+	border: double;
+}
+body{
+	font-family: sans-serif;
+	background-image: url(../img/body.jpg);
+}

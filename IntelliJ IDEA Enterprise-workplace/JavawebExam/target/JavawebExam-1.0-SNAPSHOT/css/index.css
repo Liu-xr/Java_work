@@ -1,0 +1,148 @@
+#center{
+	height: 20px;
+	position:static;
+	background:#C6D5FD;
+	border: double;
+	font-family: "微软雅黑", serif;
+	font-weight: bold;
+}
+#backtop {
+    width: 30px;
+    text-align: center;     	
+    border: inset;
+    background-color: aliceblue;
+    position: fixed;
+    top: 80%;			 	
+    right: 2%;           
+}
+div a{
+    text-decoration: none;
+}
+#backtopfont {
+    color: black;
+    font-weight: bolder;
+    line-height: 1.2em;				/* 段间距 */
+    text-indent: 0em;				/* 首行缩进 */
+}
+#nav{
+	background: #C6D5FD;
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 140px;
+	border:3px groove #C6D5FD;
+	float: left;
+}
+nav{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	width:140px;
+	height:50px;
+	border-radius:8px;
+	font-size:0;
+	font-weight: 600;
+	background-color: cornflowerblue;
+}
+nav a{
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav a:hover{
+	color: black;
+	background-color: #C6D5FD;
+}
+a:nth-child(1){
+	width: 140px;
+}
+a:nth-child(2){
+	width: 140px;
+}
+a:nth-child(3){
+	width: 140px;
+}
+a:nth-child(4){
+	width: 140px;
+}
+a:nth-child(5){
+	width: 140px;
+}
+body{
+	font-family: sans-serif;
+	background-image: url(../img/body.jpg);
+}
+span{
+	color:#2BD6B4;
+}
+#div1{
+	margin-left: 100px;
+	margin-top: 50px;
+	float: left;
+	border: groove;
+	width: 1180px;
+	height:400px ;
+	
+}
+#div2{
+	display: none;
+	margin-left: 100px;
+	margin-top: 10px;
+	float: left;
+	border: groove;
+	width: 1180px;
+	height:410px ;
+}
+.objective{
+	float: left;
+	width: 265px;
+	height: 250px;
+	margin-top: 10px;
+	margin-left: 16px;
+	border: 2px inset aliceblue;
+}
+.p-title{
+	width: 265px;
+	height: 20px;
+	font-size: 16px;
+	background-color: #C6D5FD;
+	padding-top: 5px;
+	float: left;
+	font-family: "Microsoft YaHei UI", serif;
+	font-weight: bold;
+}
+.p-content{
+	overflow: auto;
+	padding: 2px;
+	width: 260px;
+	height: 185px;
+}
+div input{
+	width: 150px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 43%;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: SimSun-ExtB, serif ;
+	background-color: #C6D5FD;
+}
+.chapter{
+	margin-top: 20px;
+	margin-left: 180px;
+	width: 800px;
+	height: 250px;
+	font-size: 15px;
+	font-family:"Times New Roman", serif;
+	align-content: center;
+	text-align: center;
+}
+

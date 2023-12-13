@@ -1,0 +1,24 @@
+body{
+	background-image: url(../img/body.jpg);
+}
+#div{
+	width: auto;
+	height: auto;
+	border:inset;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-top: 100px;
+	text-align: center;
+}
+#center{
+	height: 20px;
+	position:static;
+	background:#C6D5FD;
+	border: double;
+	font-family: "微软雅黑", serif;
+	font-weight: bold;
+}
+.modifiedText{
+	background-color: transparent;
+	resize:none;
+}
