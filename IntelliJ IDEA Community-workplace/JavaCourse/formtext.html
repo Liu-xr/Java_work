@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+  <script language="JavaScript">
+//所有用户输入非空验证
+function isNull(value, message){
+	if(value.length == 0){
+		alert(message);
+		return true;
+	}
+	return false;
+}
+
+//验证账号:首字符字母  + 非空
+function account(){
+	var first = document.forms[0].account.value.charAt(0);
+	var value = document.forms[0].account.value.trim();
+	if(isNull(value, "账号不能为空！"))
+		return false;
+	else{
+		if(first>='a'&&first<='z'||first>='A'&&first<='Z')
+			return true;
+		else{
+			alert("账号首字符必须为字母！");
+			return false;
+		}
+	}
+}
+
+//验证密码:非空，长度在6~16之间，正则，且密码和确认密码相同
+function psw(){
+	var exp = /^[A-Za-z0-9]+$/;
+	var ps1 = document.forms[0].password.value.trim();
+	var ps2 = document.forms[0].sure_password.value.trim();
+	if(isNull(ps1, "密码不能为空！"))
+		return false;
+	else{
+		if(ps1.length >=6 && ps1.length <=16){
+			if(exp.test(ps1)){
+				if(ps1 == ps2)
+					return true;
+				else{
+					alert("两次密码必须一致！");
+					return false;
+				}
+			}
+			else{
+				alert("密码不能包含字母和数字之外的字符");
+				return false;
+			}
+		}
+		else{
+			alert("密码的长度必须在6位到16位之间!");
+			return false;
+		}
+	}
+}
+
+//验证邮编：非空，6位，正则
+function postcode(){
+	var exp = /^\d{6}$/;
+	var postcode = document.forms[0].postcode.value.trim();
+	if(isNull(postcode, "邮编不能为空！"))
+		return false;
+	else{
+		if(postcode.length ==6){
+			if(exp.test(postcode))
+				return true;
+			else{
+				alert("邮编格式错误！");
+				return false;
+			}
+		}
+		else{
+			alert("邮编长度必须为6位！");
+			return false;
+		}
+	}
+}
+
+//验证Email：非空，正则
+function email(){
+	var exp=/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+	var email = document.forms[0].email.value.trim();
+	if(isNull(email, "email不能为空！"))
+		return false;
+	else{
+		if(exp.test(email))
+			return true;
+		else{
+			alert("email格式错误！");
+			return false;
+		}
+	}
+}
+
+//验证身份证:非空，18位，正则
+function checkIdenty(){
+	var bir = document.forms[0].birthday.value.trim();
+	var id = document.forms[0].id.value.trim();
+	var birid = id.substring(6,14);
+	if(isNull(id,"身份证不能为空！"))
+		return false;
+	else{
+		if(id.length!=18){
+			alert("身份证要求18位!");
+			return false;
+		}else{
+			if(bir!=birid){
+				alert("身份证输入和生日不符合！");
+				return false;
+			}
+			else
+				return true;
+		}
+	}
+}
+
+//提交按钮
+function submitted(){
+	if(account()&&psw()&&postcode()&&email()&&checkIdenty()){
+    	alert("验证成功");
+    	return true;
+    }
+	else
+	return false;
+  }
+  </script>
+</head>
+<body>
+<form action="" method="post" name="myForm">
+  <table name="myTable"  cellpadding="4" align="center">
+    <caption align="center">表单验证</caption>
+    <tr>
+      <th>登录账号：</th>
+      <td>
+        <input type="text" name="account">
+      </td>
+    </tr>
+    <tr>
+      <th>密码：</th>
+      <td>
+        <input type="text" name="password">
+      </td>
+    </tr>
+    <tr>
+      <th>确认密码：</th>
+      <td>
+        <input type="text" name="sure_password">
+      </td>
+    </tr>
+    <tr>
+      <th>姓名：</th>
+      <td>
+        <input type="text" name="name">
+      </td>
+    </tr>
+    <tr>
+    <th>身份证号码：</th>
+    <td>
+      <input type="text" name="id">
+    </td>
+  </tr>
+    <tr>
+    <th>出生年月日：</th>
+    <td>
+      <input type="text" name="birthday">
+    </td>
+  </tr>
+    <tr>
+    <th>住址：</th>
+    <td>
+      <input type="text" name="address">
+    </td>
+  </tr>
+    <tr>
+    <th>邮编：</th>
+    <td>
+      <input type="text" name="postcode">
+    </td>
+  </tr>
+    <tr>
+    <th>email：</th>
+    <td>
+      <input type="text" name="email">
+    </td>
+  </tr>
+    <tr>
+      <td align="center">
+        <input type="button" name="提交" value="提交" onclick="submitted()">
+      </td>
+      <td align="center">
+        <input type="reset" name="重置" value="重置">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

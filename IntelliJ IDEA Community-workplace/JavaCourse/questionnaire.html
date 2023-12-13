@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>调查问卷</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    <table  border="1" cellpadding="10" cellspacing="0" align="center">
+    <caption align="left">调查问卷</caption>
+        <tr>
+            <th align="left">姓名： </th>
+            <td><input type="text" name="name" size="10"></td>
+        </tr>
+        <tr>
+            <th align="left">性别：</th>
+            <td>
+                男 <input type="radio" name="sex" checked>
+                女 <input type="radio" name="sex" >
+            </td>
+        </tr>
+        <tr>
+            <th align="left">所在地：</th>
+            <td>
+                <select name="place">
+                    <option value="请选择" disabled selected>请选择..</option>
+                    <option value="利比亚">利比亚</option>
+                    <option value="China">中国</option>
+                    <option value="earth">地球</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th align="left">喜欢的歌手：</th>
+            <td>
+                <input type="checkbox" name="lovedSinger" checked>张三
+                <input type="checkbox" name="lovedSinger" checked>李四
+                <input type="checkbox" name="lovedSinger">王五
+                <input type="checkbox" name="lovedSinger">大连一哥
+            </td>
+        </tr>
+        <tr>
+            <th align="left">你的靓照：</th>
+            <td>
+                <input type="file" name="yourPicture">
+            </td>
+        </tr>
+        <tr>
+            <th align="left">个人描述：</th>
+            <td>
+                <textarea name="个人描述" rows="10" cols="25"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="submit" name="submit" value="提交">
+            </td>
+            <td align="center">
+                <input type="reset" name="reset" value="重置">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
