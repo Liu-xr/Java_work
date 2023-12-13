@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<members>									  <!--定义XML文档元素-->
+    <leader>
+        <no>001</no>
+        <name>王五</name>
+        <age>29</age>
+    </leader>
+    <member id="1">
+        <no>101</no>
+        <name>张三</name>
+        <age>20</age>
+    </member>
+    <member id="2">
+        <no>202</no>
+        <name>赵六</name>
+        <age>10</age>
+    </member>
+</members>
