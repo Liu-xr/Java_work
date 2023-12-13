@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "no":"001",
+      "name":"fast",
+      "age":21
+    },
+    {
+      "no":"002",
+      "name":"json",
+      "age":20
+    }
+  ],
+  "teacher": {
+      "no":"1001",
+      "name":"jack",
+      "age":41
+}
+}
